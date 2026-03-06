@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Roast Universe</title>
+<style>
+body {
+    margin:0;
+    font-family: 'Arial', sans-serif;
+    background: #0c0c14;
+    color: #eee;
+}
+header {
+    text-align:center;
+    padding:80px 20px;
+    background: linear-gradient(135deg,#ff006e,#7b00ff);
+}
+header h1 {
+    font-size: 42px;
+    margin-bottom:10px;
+}
+header p {
+    font-size:18px;
+    color:#f0f0f0aa;
+}
+section {
+    padding:60px 20px;
+    border-bottom:1px solid #222;
+    text-align:center;
+}
+h2 {
+    font-size:28px;
+    color:#ff4d94;
+}
+input, select {
+    padding:12px;
+    margin:6px;
+    border-radius:6px;
+    border:none;
+    width:200px;
+    outline:none;
+}
+button {
+    padding:12px 22px;
+    margin:6px;
+    border:none;
+    border-radius:8px;
+    background:#ff4d94;
+    color:white;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.2s;
+}
+button:hover {
+    background:#ff1ab3;
+    transform:scale(1.05);
+}
+.result-box {
+    background:#111;
+    padding:20px;
+    margin-top:15px;
+    border-radius:12px;
+    max-width:500px;
+    margin-left:auto;
+    margin-right:auto;
+    min-height:40px;
+}
+footer {
+    text-align:center;
+    padding:40px;
+    color:#888;
+    background:#0b0b10;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>🔥 AI Roast Universe</h1>
+    <p>Get roasted by AI & prank your friends instantly!</p>
+</header>
+
+<section>
+<h2>Roast Yourself</h2>
+<input id="name" placeholder="Your Name">
+<select id="level">
+    <option>Friendly</option>
+    <option>Savage</option>
+    <option>Destroy Me</option>
+</select>
+<button onclick="roast()">Roast Me</button>
+<div class="result-box" id="roastResult">Your roast will appear here...</div>
+</section>
+
+<section>
+<h2>Roast Battle</h2>
+<input id="name1" placeholder="First Person">
+<input id="name2" placeholder="Second Person">
+<button onclick="battle()">Start Battle</button>
+<div class="result-box" id="battleResult">Battle result will appear here...</div>
+</section>
+
+<section>
+<h2>Roast Trap</h2>
+<input id="friendName" placeholder="Friend Name">
+<button onclick="generateLink()">Create Roast Trap</button>
+<p id="trapLink">Trap link will appear here...</p>
+<div class="result-box" id="trapResult">If your friend opens the link, roast will appear here...</div>
+</section>
+
+<section>
+<h2>Personality Roast</h2>
+<select id="personality">
+    <option>Student</option>
+    <option>Programmer</option>
+    <option>Gamer</option>
+    <option>Lazy Person</option>
+</select>
+<button onclick="personalityRoast()">Analyze</button>
+<div class="result-box" id="personalityResult">Result will appear here...</div>
+</section>
+
+<footer>
+Created by Ans
+</footer>
+
+<script src="script.js"></script>
+</body>
+  </html>
